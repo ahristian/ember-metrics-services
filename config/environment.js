@@ -6,6 +6,9 @@ module.exports = function (environment) {
     environment,
     rootURL: '/',
     locationType: 'history',
+    'ember-d3': {
+      bundle: true,
+    },
     EmberENV: {
       EXTEND_PROTOTYPES: false,
       FEATURES: {

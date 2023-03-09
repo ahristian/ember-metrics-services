@@ -1,0 +1,48 @@
+<table class="table-auto mt-6">
+  <thead>
+    <tr>
+      <th class="px-4 py-2">
+        ID
+      </th>
+      <th class="px-4 py-2">
+        Type
+      </th>
+      <th class="px-4 py-2">
+        Start
+      </th>
+      <th class="px-4 py-2">
+        End
+      </th>
+      <th class="px-4 py-2">
+        Cost
+      </th>
+      <th class="px-4 py-2">
+        TndCost
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each @services as |service|}}
+      <tr>
+        <td class="border px-4 py-2">
+          {{service.id}}
+        </td>
+        <td class="border px-4 py-2">
+          {{service.type}}
+        </td>
+        <td class="border px-4 py-2">
+          {{service.attributes.start}}
+        </td>
+        <td class="border px-4 py-2">
+          {{service.attributes.end}}
+        </td>
+        <td class="border px-4 py-2">
+          {{service.attributes.cost}}
+        </td>
+        <td class="border px-4 py-2">
+          {{service.attributes.tndCost}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
